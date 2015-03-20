@@ -1,0 +1,14 @@
+<!doctype html>
+<html>
+<head>  
+  <title>Berlin - Ping Pong Map </title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <%= render 'layouts/navbar'%>
+    <%= yield %>
+  <%= render 'layouts/js'%>
+</body>
+</html>

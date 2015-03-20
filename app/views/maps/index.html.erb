@@ -1,0 +1,28 @@
+
+ <div class="row"> 
+  <div class="nav-left">
+	<form action="root_path" method="POST" >
+
+		<div class="form-group">
+			<div class="fieldgroup">
+				<label>Title</label>
+				<input  class="form-control" id ="title" name ="location[title]" type= "text">
+			</div>	
+			<div class="fieldgroup">	
+				<label> Latitude</label>
+				<input  data-validation="number" data-validation-allowing="float" class="form-control" id ="latitude" name ="location[lat]" type= "text">
+			</div>
+			<div class="fieldgroup">		
+				<label>Longitude</label>
+				<input  data-validation="number"  data-validation-allowing="float" class="form-control" id ="longitude" name ="location[lng]" type= "text">
+			</div>			
+			<button type="submit" class="btn">Try it</button>
+			</div>
+	</form>
+    </div>    
+
+    <div class="map-wrap">
+      <%= image_tag 'plus.png', id: 'toggle', class: 'toggle' %>
+      <div id="map-canvas"></div>
+    </div> 
+</div>

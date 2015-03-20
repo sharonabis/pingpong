@@ -1,0 +1,114 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+body, html {
+  height: 100%;
+  width: 100%;
+}
+.panel-body {
+	height: 100%;
+  	width: 100%;
+}
+
+#map-canvas {
+	height:100%;
+}
+.row {
+
+	height:100%;
+	margin: auto 0;
+}
+
+.toggle {
+    position: absolute;
+    z-index: 100;
+}
+
+
+.search {
+	padding: 11px 14px 9px 34px;
+	margin: 3px;
+	background: url('search.png') no-repeat 8px 6px #fff;
+
+}
+.navbar {
+	margin-bottom:0; 
+	background-color: #F7F7F7;
+a {
+	    color: #888;
+    }
+}
+.nav-left {
+    margin:50px auto 0 auto;
+    background: #F7F7F7;
+    padding: 25px 15px 25px 10px;
+    font: 12px arial, "Times New Roman", Times, serif;
+    color: #888;
+    text-shadow: 1px 1px 1px #FFF;
+    border:1px solid #E4E4E4;
+    height: auto;
+    margin-top:0; 
+    display:none;
+    float:left;
+    width:20%;
+    height: 100%;
+  }
+
+.map-wrap {
+	padding:0 0 0 0;
+	float:left;
+    width:100% ;
+    height:80%;
+    height: 100%;
+}
+
+.submit {
+    background: #E27575;
+    border: none;
+    padding: 10px 25px 10px 25px;
+    color: #FFF;
+    box-shadow: 1px 1px 5px #B6B6B6;
+    border-radius: 3px;
+    text-shadow: 1px 1px 1px #9E3F3F;
+    cursor: pointer;
+}
+
+
+
+.navbar-brand img {
+    margin-top:-12px;
+}
+
+.has-error .help-block {
+    display:none;
+}
+
+button {
+    background: #E27575;
+    border: none;
+    padding: 10px 25px 10px 25px;
+    color: #FFF;
+    box-shadow: 1px 1px 5px #B6B6B6;
+    border-radius: 3px;
+    text-shadow: 1px 1px 1px #9E3F3F;
+    cursor: pointer;
+}
+input{
+    margin: 5px auto 20px auto;
+}
+
+@media (max-width:991px) {
+	.nav-left {
+	    height:auto;
+        width:100%;
+	}
+    .map-wrap {
+  
+        padding: 0 0 0 0;
+        display: inline-block;
+
+        width:100% !important;
+       
+  }
+}
+
