@@ -18,8 +18,8 @@ function initialize() {
     var currentInfoWindow = '';
     //marker image
     
-    var image = 'assets/pin.png';
-    var plusimage = 'assets/plusPin.png';
+    var image = '/assets/pin.png';
+    var plusimage = '/assets/plusPin.png';
     
     var markerd = new google.maps.Marker({
       position: LatLng,
