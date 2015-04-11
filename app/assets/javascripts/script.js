@@ -18,8 +18,8 @@ function initialize() {
     var currentInfoWindow = '';
     //marker image
     
-    var image = '/assets/pin.png';
-    var plusimage = '/assets/plusPin.png';
+    var image = "<%= asset_path ('pin.png') %>";
+    var plusimage = "<%= asset_path ('plusPin.png') %>"
     
     var markerd = new google.maps.Marker({
       position: LatLng,
@@ -33,15 +33,15 @@ function initialize() {
     $( "#toggle" ).click(function() {
     $( ".nav-left" ).toggle( "slow" );
 
-    if ($(this).attr('src') === "/assets/plus.png") { 
-            $(this).attr("src", "/assets/minus.png"); 
+    if ($(this).attr('src') === "assets/plus.png") { 
+            $(this).attr("src", "assets/minus.png"); 
                $(".map-wrap").css({"width":"80%"});
             
               markerd.setMap(map);
       
     }
     else { 
-            $(this).attr("src", "/assets/plus.png");
+            $(this).attr("src", "assets/plus.png");
             $( ".map-wrap" ).animate({ width: '100%' }, 610 );
             markerd.setMap(null);
    
