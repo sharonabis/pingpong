@@ -64,10 +64,10 @@ function initialize() {
         var place = mydata[x];
         var location = new google.maps.LatLng(place.lat,place.lng)
         //all  values 
-        addMarker(map, place.name,  location, place.description)  
+        addMarker(map, place.title,  location, place.description)  
       } 
   //create markers
-      function addMarker(map, name, location) {
+      function addMarker(map, title, location) {
         var marker = new google.maps.Marker({
         animation: google.maps.Animation.DROP,
         icon: image,
@@ -82,7 +82,7 @@ function initialize() {
       //create info window
       var infowindow = new google.maps.InfoWindow({
       //hold all the content for the info window 
-      content:'<div class="infobox"><h2>' + place.name + '</h2><p>' + place.description + '</p><p>'+ place.lat + "," + place.lng +'</p></div>',
+      content:'<div class="infobox"><h2>' + place.title + '</h2><p>'+ place.lat + "," + place.lng +'</p></div>',
 
 
       }); 

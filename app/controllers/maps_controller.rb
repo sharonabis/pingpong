@@ -1,13 +1,17 @@
 class MapsController < ApplicationController
-	 def index
+  skip_before_action :verify_authenticity_token
+	  
+    def index
     	@data = Location.all
   	end
+
     def new
   		@location = Location.new
   	end
 
   	def create
-  		Location.create(location_params)
+  		@location = Location.new(location_params)
+      @location.save
   		redirect_to maps_path
   	end
 
