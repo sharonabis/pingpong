@@ -33,15 +33,15 @@ function initialize() {
     $( "#toggle" ).click(function() {
     $( ".nav-left" ).toggle( "slow" );
 
-    if ($(this).attr('src') === "assets/plus.png") { 
-            $(this).attr("src", "assets/minus.png"); 
+    if ($(this).attr('src') === "<%= asset_path ('plus.png') %>" { 
+            $(this).attr("src", "<%= asset_path ('minus.png') %>"; 
                $(".map-wrap").css({"width":"80%"});
             
               markerd.setMap(map);
       
     }
     else { 
-            $(this).attr("src", "assets/plus.png");
+            $(this).attr("src", "<%= asset_path ('plus.png') %>");
             $( ".map-wrap" ).animate({ width: '100%' }, 610 );
             markerd.setMap(null);
    
