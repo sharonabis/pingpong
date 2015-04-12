@@ -31,7 +31,7 @@ function initialize() {
     markerd.setMap(null);
     
     $( "#toggle" ).click(function() {
-    $( ".nav-left" ).toggle( "slow" );
+    $( ".nav-left" ).toggle( "slow");
 
     if ($(this).attr("src") === "<%= asset_path ('plus.png') %>") { 
             $(this).attr("src", "<%= asset_path ('minus.png') %>"); 

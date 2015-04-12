@@ -60,6 +60,7 @@ a {
     width:100% ;
     height:80%;
     height: 100%;
+    position: relative; 
 }
 
 .submit {
@@ -83,7 +84,7 @@ a {
     display:none;
 }
 
-button {
+.btn {
     background: #E27575;
     border: none;
     padding: 10px 25px 10px 25px;
@@ -92,6 +93,10 @@ button {
     border-radius: 3px;
     text-shadow: 1px 1px 1px #9E3F3F;
     cursor: pointer;
+    &:hover, &:focus {
+        color: #fff;
+        background: lighten(#E27575, 10%)
+    }
 }
 input{
     margin: 5px auto 20px auto;
