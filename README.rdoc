@@ -1,1 +1,1 @@
-<a href = "https://mytables.herokuapp.com/" target="blank">Demo Application</a>
+[Application Demo](https://mytables.herokuapp.com)
