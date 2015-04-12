@@ -1,1 +1,1 @@
-[Application Demo](https://mytables.herokuapp.com)
+https://mytables.herokuapp.com
